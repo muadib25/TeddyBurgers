@@ -111,8 +111,6 @@ namespace GameProject
             // set initial health and score strings
             healthString = GameConstants.HealthPrefix + burger.Health;
             scoreString = GameConstants.ScorePrefix + score;
-
-
         }
 
         /// <summary>
@@ -240,7 +238,6 @@ namespace GameProject
                 }
             }
 
-
             // check and resolve collisions between teddy bears and projectiles
             foreach (TeddyBear bear in bears)
             {
@@ -276,8 +273,6 @@ namespace GameProject
             {
                 SpawnBear();
             }
-
-
 
             // clean out inactive projectiles
             for (int i = projectiles.Count - 1; i >= 0; i--)
